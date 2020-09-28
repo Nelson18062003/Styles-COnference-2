@@ -19,7 +19,7 @@
 }
 
 body {
-    background: url(../images/pic01.jpg);
+    background: url(../images/wall01.jpg);
 
 }
 
@@ -31,7 +31,7 @@ body {
     top: 0;
     border-bottom: 4px solid white;
     padding: 12px;
-
+    z-index: 10;
 }
 
 .header-container a {
@@ -188,7 +188,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
     flex-direction: column;
 
@@ -203,12 +203,14 @@ body {
     color: white;
     background-color: rgba(44, 62, 80, 1.0);
     width: 50%;
+    margin-bottom: 23px;
 }
 
-.container-three>.speakers-box>.individual-speakers:nth-child(even) {
+
+/* .container-three>.speakers-box>.individual-speakers:nth-child(even) {
     margin-right: 0;
     margin-left: 12px;
-}
+} */
 
 .container-three>.speakers-box>.individual-speakers a {
     color: white;
@@ -228,14 +230,10 @@ body {
 /* Time line section */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-family: "Montserrat";
+.container-four h1 {
+    font-size: 33px;
+    color: white;
+    text-align: center;
 }
 
 .container {
@@ -245,7 +243,6 @@ html {
     align-items: center;
     justify-content: center;
     padding: 100px 0;
-    background-color: #111;
 }
 
 .timeline {
@@ -262,10 +259,14 @@ html {
 
 .timeline ul li {
     padding: 20px;
-    background-color: #1e1f22;
+    background-color: rgba(44, 62, 80, 1.0);
     color: white;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+.timeline ul li:hover {
+    background-color: rgb(36, 72, 107);
 }
 
 .timeline ul li:last-child {
@@ -351,5 +352,94 @@ html {
 
     .timeline ul li:hover::before {
         background-color: aqua;
+        box-shadow: 0 0 20px #fff, 0 0 30px aqua, 0 0 40px aqua, 0 0 50px aqua, 0 0 60px aqua, 0 0 70px aqua, 0 0 80px aqua;
     }
+}
+
+/*Contact section styling */
+
+.container-five>h1 {
+    color: white;
+    text-align: center;
+}
+
+.section-contact-container {
+    margin: auto;
+    margin-top: 2em;
+    border: 5px solid rgba(44, 62, 80, 1.0);
+    background-color: rgba(44, 62, 80, 1.0);
+    color: white;
+    padding: 23px;
+    font-size: 17px;
+    width: 50%;
+
+
+}
+
+.section-contact-container h1,
+.section-contact-container h4 {
+    text-align: center;
+}
+
+.section-contact-container form input[type=text],
+.section-contact-container form input[type=tel],
+.section-contact-container form input[type=email],
+.section-contact-container form input[type=number],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.section-contact-container form .Button button {
+    width: 100%;
+    height: auto;
+    background-color: #dfe6e9;
+    font-size: 23px;
+    border: 0;
+    font-family: 'Lobster', cursive;
+    border: 5px solid white;
+    padding: 13px;
+}
+
+.section-contact-container form .Button button:hover {
+    background-color: rgba(44, 62, 80, 1.0);
+    color: white;
+}
+
+
+/* Conference hall gallery photos */
+
+.conference_hall_section {
+    background-color: rgba(44, 62, 80, 0.2);
+    width: 70%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 22px;
+    margin: 25px;
+    margin-bottom: 0;
+}
+
+.conference_hall_section div>img {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+}
+
+.conference_hall_section>p {
+    color: white;
+    font-size: 40px;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 34px;
 }

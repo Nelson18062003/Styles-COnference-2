@@ -17,12 +17,12 @@
             </div>
             <div class="text-section">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Speakers</a></li>
-                    <li><a href="#">Tickets and More</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#Speakers">Speakers</a></li>
                     <li><a href="#">Location</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                    <li><a href="#Conference-halls">Conference Halls</a></li>
+
                 </ul>
             </div>
         </div>
@@ -72,7 +72,7 @@
             </div>
         </div>
 
-        <div class="container-three">
+        <div class="container-three" id="Speakers">
             <h1>Confirmed SPeakers</h1>
             <div class="speakers-box">
                 <div class="individual-speakers">
@@ -162,46 +162,96 @@
             <a href="#"><i class="fab fa-youtube"></i></a>
             <a href="#" style="border: none;"><i class="fab fa-linkedin-in"></i></a>
         </div>
-
-        <div class="container">
-            <div class="timeline">
-                <ul>
-                    <li>
-                        <div class="timeline-content">
-                            <h3 class="date">20th may, 2010</h3>
-                            <h1>Heading 1</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab
-                                laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-content">
-                            <h3 class="date">20th may, 2010</h3>
-                            <h1>Heading 2</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab
-                                laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-content">
-                            <h3 class="date">20th may, 2010</h3>
-                            <h1>Heading 3</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab
-                                laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-content">
-                            <h3 class="date">20th may, 2010</h3>
-                            <h1>Heading 4</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab
-                                laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                        </div>
-                    </li>
-                </ul>
+        <div class="container-four">
+            <h1>Program of the conference</h1>
+            <div class="container">
+                <div class="timeline">
+                    <ul>
+                        <li>
+                            <div class="timeline-content">
+                                <h3 class="date">20th may, 2010</h3>
+                                <h1>Heading 1</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectet</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h3 class="date">20th may, 2010</h3>
+                                <h1>Heading 2</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetu</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h3 class="date">20th may, 2010</h3>
+                                <h1>Heading 3</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetu</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h3 class="date">20th may, 2010</h3>
+                                <h1>Heading 4</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
+
+        <div class="container-five" id="contacts">
+            <h1>Contact section</h1>
+
+            <div class="section-contact-container">
+                <h4>Mind sharing a bits about yourself?</h4>
+
+                <form>
+                    <label for="fname">What's your first name?</label>
+                    <input type="text" id="fname" name="firstname">
+
+                    <label for="lname">How about your last name?</label>
+                    <input type="text" id="lname" name="lastname">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Gabon">Gabon</option>
+                        <option value="Cameroun">Cameroun</option>
+                        <option value="South_Africa">South Africa</option>
+                    </select>
+                    <label for="email">Enter your email address</label>
+                    <input type="email" id="email-address">
+
+                    <label for="phone_number">We need your tel number</label>
+                    <input type="tel" id="phone_number" name="phone number">
+
+                    <label for="age">How old are you?</label>
+                    <input type="number" id="age" name="age">
+
+                    <div class="Button">
+                        <button>All set, let's go</button>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+        <div class="conference_hall_section" id="Conference-halls">
+            <p>Our conference halls</p>
+            <div class="image-container">
+                <div><img src="assets/images/image02.jpg" alt=""></div>
+                <div><img src="assets/images/image06.jpg" alt=""></div>
+                <div><img src="assets/images/image07.jpg" alt=""></div>
+                <div><img src="assets/images/image08.jpg" alt=""></div>
+                <div><img src="assets/images/image09.jpg" alt=""></div>
+                <div><img src="assets/images/image10.jpg" alt=""></div>
+            </div>
+
+        </div>
     </div>
 </body>
 
